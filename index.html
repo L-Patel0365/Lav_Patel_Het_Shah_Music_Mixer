@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Music Mixer</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/f17d0382fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/theme.jpg" alt="theme" />
+        <input type="range" class="volume-control" min="0" max="100" step="1" value="50" title="volume-control" />
+        <div class="btn">
+            <button class="button" id="backButton">Back</button>
+            <button class="button" id="resetButton">Reset</button>
+        </div>
+        <div class="cd-board">
+            <div class="drop-zone" id="drop-zone">
+                <img src="./images/cd.jpg" alt="CD" />
+            </div>
+        </div>
+        <div class="cd-Pieces">
+            <div class="cd-unit" id="cd1" draggable="true" data-audio-src="./audio/weekend.mp3">
+                <img src="./images/cd1.jpg" alt="CD Piece 1" />
+            </div>
+            <div class="cd-unit" id="cd2" draggable="true" data-audio-src="./audio/Alone .mp3">
+                <img src="./images/cd2.jpg" alt="CD Piece 2" />
+            </div>
+            <div class="cd-unit" id="cd3" draggable="true" data-audio-src="./audio/History .mp3">
+                <img src="./images/cd3.jpg" alt="CD Piece 3" />
+            </div>
+            <div class="cd-unit" id="cd4" draggable="true" data-audio-src="./audio/Blinding-Lights.mp3">
+                <img src="./images/cd4.jpg" alt="CD Piece 4" />
+            </div>
+        </div>
+        <div class="controls">
+            <div class="fa-solid fa-backward"></div>
+            <div class="fa-solid fa-headphones"></div>
+            <div id="playButton" class="fa-solid fa-play"></div>
+            <div id="pauseButton" class="fa-solid fa-pause"></div>
+            <div class="fa-brands fa-bluetooth"></div>
+            <div class="fa-solid fa-forward"></div>
+        </div>
+        <audio id="audio" preload="auto"></audio>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
